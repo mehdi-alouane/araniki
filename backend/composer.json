@@ -1,2 +1,9 @@
 {
+	"config": {
+    "vendor-dir": "libs/"
+  	},
+
+	"require": {
+		"hybridauth/hybridauth": "2.5.1"
+    }
 }

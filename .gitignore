@@ -1,6 +1,6 @@
 #backend ignore list
 backend/composor.lock
-backend/vendor
+backend/libs
 *.sublime-workspace
 *.sublime-project
 
