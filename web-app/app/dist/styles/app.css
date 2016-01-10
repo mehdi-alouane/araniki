@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'NotoNaskhArabic';
+  src: local("NotoNaskhArabic"), url("fonts/NotoNaskhArabic-Regular.ttf") format("truetype"), url("fonts/NotoNaskhArabic-Bold.ttf") format("truetype");
+  font-family: 'NotoKufiArabic';
+  src: local("NotoKufiArabic"), url("fonts/NotoKufiArabic-Regular.ttf") format("truetype"), url("fonts/NotoKufiArabic-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "NotoNaskhArabic";
+  src: url("fonts/NotoNaskhArabic.eot?") format("eot"), url("fonts/NotoNaskhArabic.woff2") format("woff2"), url("fonts/NotoNaskhArabic.woff") format("woff"), url("fonts/NotoNaskhArabic.ttf") format("truetype"), url("fonts/NotoNaskhArabic.svg#NotoNaskhArabic") format("svg"); }
+*, html {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "NotoNaskhArabic", serif !important; }
+
+/*# sourceMappingURL=app.css.map */

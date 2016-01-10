@@ -1,0 +1,4 @@
+#backend ignore list
+backend/composor.lock
+*.sublime-workspace
+*.sublime-project

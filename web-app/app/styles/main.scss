@@ -1,0 +1,16 @@
+//let's start some coding 
+
+//import 
+@import 'vars.scss';
+@import 'mixins.scss';
+@include font-face('NotoNaskhArabic', fonts/NotoNaskhArabic);
+
+
+*,html{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: $NotoNaskh !important;
+}

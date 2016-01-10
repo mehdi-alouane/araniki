@@ -1,0 +1,16 @@
+//fonts 
+
+@font-face {
+	font-family: 'NotoNaskhArabic';
+	src : local('NotoNaskhArabic'), 
+	url('fonts/NotoNaskhArabic-Regular.ttf') format('truetype'),
+	url('fonts/NotoNaskhArabic-Bold.ttf') format('truetype');
+
+	font-family: 'NotoKufiArabic';
+	src : local('NotoKufiArabic'),
+	url('fonts/NotoKufiArabic-Regular.ttf') format('truetype'),
+	url('fonts/NotoKufiArabic-Bold.ttf') format('truetype');
+}
+
+$NotoNaskh : 'NotoNaskhArabic', serif;
+$NotoKufi : 'NotoKufiArabic', serif;
