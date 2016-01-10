@@ -1,4 +1,12 @@
 #backend ignore list
 backend/composor.lock
+backend/vendor
 *.sublime-workspace
 *.sublime-project
+
+#frontend ignore list
+app/bower_components
+.sass-cache
+node_modules
+.tmp
+app/dist
