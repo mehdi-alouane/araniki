@@ -19,6 +19,7 @@
     "jquery": "~2.1.4",
     "animate.css": "~3.5.1",
     "normalize-css": "normalize.css#~3.0.3",
-    "foundation-sites": "~6.1.1"
+    "toast": "toast-grid#~1.0.0",
+    "font-awesome": "fontawesome#~4.5.0",
   }
 }
