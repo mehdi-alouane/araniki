@@ -1,4 +1,5 @@
 {
+	 "psr-4": {"Model\\": "src/"}
 	"config": {
     "vendor-dir": "libs/"
   	},

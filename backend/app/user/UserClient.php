@@ -29,12 +29,12 @@ class UserClient implements IConfigUser
 
 	}
 
-	public function remove($id)
+	public function Set(array $target, $value)
 	{
-
+		
 	}
 
-	public function update($id, $targets, $values)
+	public function get(array $target)
 	{
 
 	}
