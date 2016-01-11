@@ -1,0 +1,6 @@
+backend/vendor
+app/bower_components
+.sass-cache
+node_modules
+.tmp
+app/dist
