@@ -1,5 +1,5 @@
 #backend ignore list
-backend/composor.lock
+backend/composer.lock
 backend/libs
 *.sublime-workspace
 *.sublime-project
