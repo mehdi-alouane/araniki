@@ -1,5 +1,5 @@
 <?php
-include_once('IConfig.php');
+include_once('IDB_Config.php');
 
 abstract class Connector implements IConfig
 {
@@ -21,7 +21,7 @@ abstract class Connector implements IConfig
 
 		$DB = new mysqli($host, $user, $pswd, $name);
 		if ($DB->connect_errno) {
-			exit('(Connector) Connect Error: ' . $DB->connect_error);
+			exit('(DB Connector) Connect Error: ' . $DB->connect_error);
 		}
 		$this->hook = $DB;
 		return $DB;
@@ -33,7 +33,7 @@ abstract class Connector implements IConfig
 		$DB = $this->hook;
 
 		if (!$DB->close()) {
-			exit('(Connector) Close Error: ' . $DB->connect_error);
+			exit('(DB Connector) Close Error: ' . $DB->connect_error);
 		}
 		$this->hook = null;
 		return true;

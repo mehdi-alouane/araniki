@@ -1,9 +1,9 @@
 <?php
-include_once('Connector.php');
+include_once('DB_Connector.php');
 
 class Client extends Connector
 {
-	private $DataBase;
+	protected $DataBase;
 	public function __construct()
 	{
 		$this->DataBase = $this->open();
@@ -22,29 +22,29 @@ class Client extends Connector
 		$result = $DataBase->query($query);
 
 		if (!$result) {
-			exit('(Client) Mysqli Error: ' . $DataBase->error);
+			exit('(DB Client) Mysqli Error: ' . $DataBase->error);
 		}
 		return $result;
 	}
 
-	//@return true
+	//@return $result
 	public function setter($todo) 
 	{
 		$result = $this->query($todo);
 
 		if ($result !== true) {
-			exit('(Client) make sure that what you give me is a set value');
+			exit('(DB Client) make sure that what you give me is a set value');
 		}
-		return true;
+		return $result;
 	}
 
-	//@return true
+	//@return mysqli_result
 	public function getter($todo)
 	{
 		$result = $this->query($todo);
 
 		if ($result === true) {
-			exit('(Client) make sure that what you give me is a get value');
+			exit('(DB Client) make sure that what you give me is a get value');
 		}
 		return $result;
 	}
