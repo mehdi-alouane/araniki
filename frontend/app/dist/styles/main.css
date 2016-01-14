@@ -16,8 +16,7 @@
 .right {
   float: right; }
 
-/*-----------------------------------*\
-
+/*-----------------------------------*
   $TOAST-GRID
 
   An insane grid.
@@ -342,5 +341,3 @@ input[type="password"] {
     background-color: #FF7365;
     color: white;
     padding: 4px 12px; }
-
-/*# sourceMappingURL=app.css.map */

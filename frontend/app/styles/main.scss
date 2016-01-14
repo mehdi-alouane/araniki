@@ -1,5 +1,5 @@
 @import 'vars.scss';
-@import '../bower_components/toast/scss/_grid.scss';
+@import '../bower_components/toast/scss/grid.scss';
 //@import 'mixins/mixins.scss';
 
 *{
@@ -107,24 +107,27 @@ input[type="password"] {
 		top: 8px;right: 4px;
 		position: relative;
 		height: auto;
-		width: 98%;
+		width: 97%;
 		border: 1px solid $grey;
 		border-radius: 2px;
-	}	input[type="email"]{
+	}	
+	input[type="email"]{
 		top: 10px;right: 4px;
 		position: relative;
 		height: auto;
 		width: 97%;
 		border: 1px solid $grey;
 		border-radius: 2px;
-	}	input[type="password"]{
+	}	
+	input[type="password"]{
 		top: 12px;right: 4px;
 		position: relative;
 		height: auto;
 		width: 97%;
 		border: 1px solid $grey;
 		border-radius: 2px;
-	}input[type="submit"]{
+	}
+	input[type="submit"]{
 		top: 18px;right: 6px;
 		position: relative;
 		height: auto;
@@ -135,6 +138,7 @@ input[type="password"] {
 		border-radius: 2px;
 	}
 }
+
 .btn{
 	color: white;
 	padding: 4px 10px;

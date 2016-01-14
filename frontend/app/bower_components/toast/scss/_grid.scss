@@ -11,10 +11,10 @@
   Assuming default values:
 
   <div class="grid">
-    <div class="grid__col grid__col--1-of-2">
+    <div class="col col--1-of-2">
       A half-width column.
     </div>
-    <div class="grid__col grid__col--1-of-4 grid__col--pull-1-of-4">
+    <div class="col col--1-of-4 col--pull-1-of-4">
       A quarter, pulled left by its own width. You get this, right?
     </div>
   </div>
@@ -26,7 +26,7 @@
   $grid-namespace and $grid-column-namespace
   adjusts the class names for the grid. With
   default values, grid wrappers have a class
-  of '.grid' and columns '.grid__col'.
+  of '.grid' and columns '.col'.
 
   $col-groups(n) adjusts column divisions.
   For example, $col-groups(12) will produce
@@ -42,13 +42,13 @@
 
 // Namespaces
 // This stops me from being overzealous with enforcing classes
-$grid-namespace: "grid";
-$grid-column-namespace: "grid__col";
+$grid-namespace: "row";
+$grid-column-namespace: "col";
 
 // $col-groups are the column groups you want
 // For example, $col-groups: (3, 4, 5) will output:
-// .grid__col--n-of-3, .grid__col--n-of-4, [...]
-$col-groups: (2, 3, 4, 5, 6, 8, 12);
+// .col--n-of-3, .col--n-of-4, [...]
+$col-groups: (12);
 
 // Gutter width
 $gutter-width: 20px;
