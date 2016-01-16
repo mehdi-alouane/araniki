@@ -503,7 +503,7 @@ img {
     position: relative;
     top: 50%;
     right: 50%;
-    transform: translate(54%, 17%);
+    transform: translate(53.5%, 17%);
     width: 400px;
     height: 300px;
     background-color: white;
@@ -537,67 +537,100 @@ img {
         color: white;
         background-color: rgba(22, 160, 133, 0.5); }
 
-.button {
+.btn {
   color: #666;
   background-color: #ebebeb;
   border: medium none;
-  display: inline-block;
   font-size: 0.875rem;
-  outline: medium none;
-  padding: 1em 2em;
+  outline: none;
+  padding: 0.5em 1em;
   position: relative;
   text-align: center;
   text-decoration: none;
   transition: border 0.2s ease-out 0s, background 0.2s ease-out 0s;
-  vertical-align: middle; }
-  .button:hover {
+  vertical-align: middle;
+  border-radius: 60px; }
+  .btn:hover {
     color: #666;
     text-decoration: none;
     background-color: #f5f5f5; }
-  .button:active, .button:focus {
+  .btn:active, .btn:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset; }
 
-.button-icon {
-  height: 34px;
-  line-height: 34px;
-  padding: 0 14px; }
-
-.button-primary {
+.btn-primary {
   color: #fff;
   background-color: #1abc9c; }
-  .button-primary:hover {
+  .btn-primary:hover {
     color: #fff;
     background-color: #14dcb4; }
-  .button-primary:visited {
+  .btn-primary:visited {
     color: #fff; }
-  .button-primary:active, .button-primary:focus {
+  .btn-primary:active, .btn-primary:focus {
     color: #0f6b59;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25); }
 
-.button-info {
+.btn-info {
   color: #fff;
   background-color: #00c0f0; }
-  .button-info:hover {
+  .btn-info:hover {
     color: #fff;
     background-color: #5fccf3; }
 
-.button-alert {
+.btn-alert {
   color: #fff;
   background-color: #e74c3c; }
-  .button-alert:hover {
+  .btn-alert:hover {
     color: #fff;
     background-color: #f25b4b; }
 
-.button-small {
+.btn-small {
   padding: .5em 1em; }
 
-.button-twitter {
-  font-size: 1em;
-  padding: 1em 4em;
-  background-position: calc(100% - 16px) center;
-  background-repeat: no-repeat;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozOUY3REVFMkFCNUExMUUzQjVGMEMxMURBNjdBN0JGNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozOUY3REVFM0FCNUExMUUzQjVGMEMxMURBNjdBN0JGNiI%2BIDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjM5RjdERUUwQUI1QTExRTNCNUYwQzExREE2N0E3QkY2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjM5RjdERUUxQUI1QTExRTNCNUYwQzExREE2N0E3QkY2Ii8%2BIDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY%2BIDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8%2B%2B6QyTAAAAXBJREFUeNrslrtKA0EUQDMSBQniD4iFIBICNmKhtWIv6AcoooUfkPyAYGsXLGNjpSLYWCmIiGBlnTTaicEukpjxDEyxrGTn7u6AW8yFw13YuzOHea7SWpeKFGOlgkUQCkJBKAgVXkgpZVLZZBfEIrTgBW5hx%2FRh363DhNPIXB1J2Jpj2Ha0swHf%2Bm88QBuaov6EQo%2FwA4cjZMrwrkfHF5zBqi%2Bh%2B0jjN1CNCS3r5BjArs8RasQ6GFqxPajBmkPoQrxEhEJL8KyzR1MqJN32J1DLsZvffJ9D5zCZQ%2BhOXCmcMrOLLjNOVxfGvU4ZB9uA1IBr02bK0Tnl%2B760WLn%2Bqe0pa%2BznSK8pp%2B4TFmjjIzpCXu4yGm2TtqCbQuggKuNtDcXqp%2BFIsHbqmfqTCvE8Ze8rcwX0E0R6sJ95AFwFMA8tezonxdDuxGqeGUmzqGdIm7ACs1CBHnTgCa6o7UiWSK5dFv4Yg1AQCkJB6J%2FjV4ABAKp7wL59yekoAAAAAElFTkSuQmCC); }
+.btn-icon {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 14px; }
+
+.btn-twitter {
+  color: white;
+  background-color: #2795b6;
+  border: 1px solid #2795b6;
+  font-size: 0.875rem;
+  outline: none;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: border 0.2s ease-out 0s, background 0.2s ease-out 0s;
+  vertical-align: middle;
+  border-radius: 60px; }
+  .btn-twitter:hover {
+    border: 1px solid #2795b6;
+    transition: all 0.2s;
+    color: #2795b6; }
+  .btn-twitter:active, .btn-twitter:focus {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset; }
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+  border: 1px solid #3b5998;
+  font-size: 0.875rem;
+  outline: none;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: border 0.2s ease-out 0s, background 0.2s ease-out 0s;
+  vertical-align: middle;
+  border-radius: 60px; }
+  .btn-facebook:hover {
+    transition: all 0.2s;
+    border: 1px solid #3b5998;
+    color: #3b5998; }
+  .btn-facebook:active, .btn-facebook:focus {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset; }
 
 .left {
   float: left; }
