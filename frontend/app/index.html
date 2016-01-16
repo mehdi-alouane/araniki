@@ -6,36 +6,31 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
-	<link rel="stylesheet" href="dist/styles/style.css">
+	<link rel="stylesheet" href="dist/styles/app.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-  <div class="container">
-  	<video autoplay="true" loop poster="images/no-hero.jpg">
-  		<source src="videos/hero-vid.mp4" type="video/mp4">
-  		<source src="videos/hero-vid.webm" type="video/webm">
-  	</video>
-  	<div class="container_header">
-  		<div class="container_logo">
-  			<h1 class="label_logo">أرانيكي</h1>
-  			<div class="container_header_nav">
-  				<li>
-  				<a href=""></a>
-  				<a href=""></a>
-  				</li>
-  			</div>
-  		</div>
-  	</div>
-  	<div class="signup_form">
-  		<h1 class="form_label">سَجِلْ في أرانيكي</h1>
-  		<input type="text" placeholder="إسم المستخدم" name="Uname">
-  		<input type="email" placeholder="البريد الإلكتروني" name="Uemail">
-  		<input type="password" placeholder="كلمة السر" name="Upasswd">
-  		<input type="submit" value="سَجِلْ" name="signup">
-  	</div>
+<div class="container">
+  <header>
+  <button class="btn btn-primary margin-top-one margin-right-three">تسجيل الدخول</button>
+    <a href="" class="padding-top-one padding-right-one margin-top-one text-center">
+      <h1 class="label-logo">أرانيكي</h1>
+    </a>
+    <h3 class="sub-logo text-center padding-left-one ">منصة لمشاركة الأنميات و أراءك حولهم</h3>
+  </header>
+
+  <div class="signup-form padding-one form-control">
+    <h3 class="form-title text-center">سَجِلْ في أرانيكي</h3>
+    <input type="text" placeholder="إسم المستخدم" name="">
+    <input type="text" placeholder="البريد الإلكتروني" name="">
+    <input type="password" placeholder="كلمة السر" name="">
+    <input type="submit" value="سَجِلْ" name="">
+    <button class="btn btn-twitter margin-top-half margin-left-one"><i class="fa fa-twitter"></i>
+سجل عن طريق تويتر</button>
+    <button class="btn btn-facebook margin-top-half"><i class="fa fa-facebook"></i>
+سجل عن طريق فيسبوك</button>
   </div>
-
-
-<!--script src="scripts/app.js"></script-->
+</div>
 </body>
 </html>

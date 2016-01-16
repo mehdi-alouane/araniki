@@ -1,0 +1,28 @@
+label {
+  color: #383838;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin: 0 0 6px;
+  padding: 0;
+}
+
+.form-control {
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  font-size: 0.8125rem;
+  margin: 0 0 1rem;
+  outline: medium none;
+  padding: 12px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #3498db;
+  }
+}
+
+select {
+  height: 44px;
+}
