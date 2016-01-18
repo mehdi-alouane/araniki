@@ -1,3 +1,4 @@
+@import 'vars';
 *,
 *:before,
 *:after {
@@ -12,7 +13,7 @@ html,
 body {
   font-size: 100%;
   line-height: 1.5;
-  color: #043D5D;
+  color: $p-color;
   text-align: right;
   direction: rtl;
   font-family: 'Droid Arabic Naskh', Helvetica, Arial, 'sans serif';
@@ -22,13 +23,13 @@ body {
 //  Default Link Styles
 
 a {
-  color: #16a085;
+  color: $a-color;
   text-decoration: none;
   line-height: inherit;
 
   &:hover,
   &:focus {
-    color: #2795b6;
+    color: $hover;
   }
 }
 
@@ -45,9 +46,59 @@ img {
   height: 100%;
   background-color:rgb(245, 245, 245);
   .header{
-    background-color: white;
     height: auto;
     width: auto;
+  }
+  .container-header{
+    position: fixed;
+    background-color: $white;
+    height: 60px;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0;
+    border-bottom: 2px solid $border-color;
+  }
+  .logo-label{
+    width: 120px;
+    height: auto;
+    padding: 10px 20px;
+  }
+  .header_search{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    .search{
+      height: 30px;
+      width: 350px;
+      font-size: 14px;
+      &:focus{
+      padding-left:200px;
+      margin-left:10px;
+      outline: none;}
+    }
+  }
+  .header_nav{
+    width: 460px;
+    height: 60px;
+    //border: 1px solid $gray;
+    position: absolute;
+    top: 0%;
+    right: 65%;
+    padding: 0px;
+    .fa{
+      padding: 0px 5px;
+    }
+    .link{
+      padding: 17px 2px;
+      margin-left: -5px !important;
+      text-align: center;
+      transition: all 0.4s ease;
+      &:hover{
+        background-color: $a-color;
+        color: $white
+      }
+    }
+    li{list-style: none;}
   }
   .signup-form{
     position: relative;
@@ -56,7 +107,7 @@ img {
     transform: translate(53.5%, 17%);
     width: 400px;
     height: 300px;
-    background-color: white;
+    background-color: $white;
     border-radius: 4px;
     display: inline-block;
     input[type="text"],
@@ -66,13 +117,13 @@ img {
       margin-top: 0.8em;
       padding-right: 6px;
       &:hover{
-        border: 1px solid #1abc9c; 
+        border: 1px solid $success;
       }
       &:active{
-        border: 1px solid #1abc9c; 
+        border: 1px solid $success;
       }
       &:focus{
-        border: 1px solid #1abc9c; 
+        border: 1px solid $success;
       }
     }
     input[type="submit"]{
@@ -80,13 +131,13 @@ img {
       width: 100%;
       margin-top: 0.8em;
       background-color: transparent;
-      border: 1px solid #16a085; 
-      color: #16a085;
+      border: 1px solid $a-color;
+      color: $a-color;
       font-size: 16px;
       border-radius: 999999px;
       &:hover{
-        color: white;
-        background-color: rgba(#16a085, 0.5);
+        color: $white;
+        background-color: rgba($a-color, 0.5);
       }
     }
   }

@@ -6,6 +6,22 @@ label {
   margin: 0 0 6px;
   padding: 0;
 }
+.round-input{
+  border-radius: 999999px;
+  border: 1px solid $border-color;
+  color: $darkgray;
+  padding-right: 10px;
+  transition: all 0.4s ease;
+  &:hover{
+    border: 1px solid $border-color--dark;
+  }
+  &:focus{
+    border: 1px solid $border-color--dark;
+  }
+  &:active{
+    border: 1px solid $border-color--dark;
+  }
+}
 
 .form-control {
   background-color: #fff;
